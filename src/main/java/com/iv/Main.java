@@ -8,6 +8,8 @@ public class Main {
         System.out.println("Hello world!");
     }
 }
+
+
 class Dealership{
     private String name;
     private String address;
@@ -21,26 +23,26 @@ class Dealership{
         this.inventory = new ArrayList<>();
     }
 
-    public void getVehiclesByPrice(float min, float max){
-        this.inventory;
-
-    }
-    public void getVehiclesByMakeModel(String make, String model){
-        this.inventory;
-
-    }
-    public void getVehiclesByYear(int min, int max){
-        this.inventory;
-    }
-    public void getVehiclesByColor(String color){
-        this.inventory;
-    }
-    public void getVehiclesByMileage(float min, float max){
-        this.inventory;
-    }
-    public void getVehiclesByType(String vehicleType){
-        this.inventory;
-    }
+//    public void getVehiclesByPrice(float min, float max){
+//        this.inventory;
+//
+//    }
+//    public void getVehiclesByMakeModel(String make, String model){
+//        this.inventory;
+//
+//    }
+//    public void getVehiclesByYear(int min, int max){
+//        this.inventory;
+//    }
+//    public void getVehiclesByColor(String color){
+//        this.inventory;
+//    }
+//    public void getVehiclesByMileage(float min, float max){
+//        this.inventory;
+//    }
+//    public void getVehiclesByType(String vehicleType){
+//        this.inventory;
+//    }
     public String getName() {
         return name;
     }
@@ -65,11 +67,8 @@ class Dealership{
         this.phone = phone;
     }
 
-    public void getAllVehicles(){
-        for(int i=0;i<inventory.size();i++){
-            ArrayList<Vehicle>(inventory);
-        }
-
+    public ArrayList<Vehicle> getAllVehicles(){
+        return this.inventory;
     }
     public void addVehicle(Vehicle vehicle){
         this.inventory.add(vehicle);
@@ -77,7 +76,7 @@ class Dealership{
     }
     public void removeVehicle(Vehicle vehicle){
         if (this.inventory.size() > 0) {
-            Vehicle inventory = inventory.remove;
+//            Vehicle inventory = inventory.remove;
         }
 
     }
